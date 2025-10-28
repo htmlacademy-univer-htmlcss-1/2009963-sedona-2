@@ -6,14 +6,14 @@
   <title>HTML Academy: Гостиницы Седоны</title>
 </head>
 <body>
-  <header class="menu">
+    <header class="menu">
       <nav class="menu-nav">
         <a class="menu-logo-link" href="index.html">
           <img class="logo" src="./images/logo.svg" width="140" height="70" alt="Sedona logo">
         </a>
         <ul class="menu-list">
           <li class="menu-item">
-            <a class="menu-link" href="#">Главная</a>
+            <a class="menu-link" href="index.html">Главная</a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#">О седоне</a>
@@ -31,6 +31,7 @@
           <li class="menu-item">
             <a class="menu-link menu-favorites" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="menu-favorites-counter">12</span>
             </a>
           </li>
           <li class="menu-link menu-item">
@@ -86,6 +87,14 @@
               </fieldset>
               <fieldset class="selector-fieldset">
                   <legend class="selector-title">Стоимость, ₽:</legend>
+                  <label class="selector-label">
+                    <input class="selector-price selector-price-from" type="number" value="0" name="price-from">
+                    <span class="price-label">от</span>
+                  </label>
+                   <label class="selector-label">
+                    <input class="selector-price selector-price-to" type="number" value="9000" name="price-to">
+                    <span class="price-label">до</span>
+                  </label>
               </fieldset>
               <button type="submit" class="button btn-secondary">Применить</button>
               <button type="reset" class="button btn-transparent">Сбросить</button>
