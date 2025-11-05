@@ -35,6 +35,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    background-color: #F2F2F2;
 }
 
 h1 {
@@ -114,6 +116,8 @@ li {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+
+  background-color: #fff;
 }
 
 /* header */
@@ -127,18 +131,22 @@ li {
     display: flex;
     width: 1060px;
     margin: 0 auto;
+
+    background-color: #fff;
 }
 
 .menu-list {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
 }
 
 .navigation-user {
-    /* max-width: 268px; */
-    /* не уверен пока насчет задания ширины, звучит нерасширяемо в будущем при изменении количества элекментов меню */
+    max-width: 350px;
     margin-left: auto;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .menu-logo-link {
@@ -332,15 +340,38 @@ li {
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #fff;
+
+    padding: 35px 70px 70px;
 }
 
 .selector-header {
+    margin: 0 0 8px;
+}
+
+.selector-breadcrumps {
+
+}
+
+.selector-list {
+    display: flex;
+    align-items: center;
 }
 
 .selector-item a{
     color: #fff;
     font-size: 16px;
     line-height: 21px;
+}
+
+.selector-item-home {
+    width: 13px;
+    height: 15px;
+    background-color: grey;
+    margin: 0 28px 0 0;
+}
+
+.selector-breadcrumps {
+    margin: 0 0 43px 0;
 }
 
 .selector-form {
@@ -380,8 +411,42 @@ li {
 
 /* result */
 
+.result {
+    padding: 50px 70px 60px;
+}
+
+.result-header-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
 .result-header {
     text-align: left;
+    margin: 0 200px 0 0;
+}
+
+.result-select {
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 21px;
+
+    width: 292px;
+}
+
+.result-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 auto;
+    width: 160px;
+}
+
+.result-button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-color: grey;
 }
 
 .result-select {
@@ -433,10 +498,35 @@ li {
 
 /* pagination */
 
+.result-pagination {
+    margin-top: 80px;
+    display: flex;
+}
+
 .pagination-item,
 .pagination-link {
     font-size: 21px;
     line-height: 36px;
+}
+
+.pagination-item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.pagination-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pagination-current {
@@ -492,16 +582,20 @@ li {
 .footer-container {
     width: 1200px;
     margin: 0 auto;
-    padding: 40px 0 30px;
+    padding: 40px 70px 30px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
 }
 
 .footer-list {
     display: flex;
     padding: 5px 0;
+    max-width: 300px;
+    flex-wrap: wrap;
 }
 
 .footer-link {
